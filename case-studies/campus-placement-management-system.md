@@ -10,6 +10,13 @@ The system covers placement drives, student profiles, company workflows, job app
 
 Full-stack product engineering at Hirecentive, working across web app flows, backend data modeling, role-based access control, realtime product data, API boundaries, and assessment-related infrastructure.
 
+## Public-Safe Evidence Notes
+
+- Timeframe: 2025 production internship work.
+- Evidence type: sanitized architecture notes, system scope, and implementation patterns from private repositories.
+- My contribution: implementation across product flows, data modeling, API boundaries, RBAC, and assessment infrastructure.
+- Not included: private source code, customer records, internal URLs, secrets, or private business metrics.
+
 ## Problem
 
 University placement teams need more than a job board. They need a system that can coordinate students, recruiters, internal staff, interviewers, drives, rounds, applications, offers, reporting, and compliance while keeping tenant data isolated.
@@ -41,7 +48,7 @@ The hard part is not just the UI. The hard parts are:
 
 - Modeled a large Convex domain with 30+ product tables and 100+ query indexes.
 - Used tenant-aware data access patterns to separate organizations and role-specific workflows.
-- Integrated WorkOS-style organization, membership, role, and permission concepts.
+- Integrated WorkOS organization, membership, role, and permission concepts.
 - Used sharded counters for high-read application-count style data.
 - Added rate limiting at multiple boundaries for user sync, invites, interviews, resume extraction, Gemini usage, Judge0, and API access.
 - Used HMAC-signed proxying patterns for model-related realtime/API traffic instead of exposing sensitive credentials to clients.
@@ -83,7 +90,7 @@ interviews, reports
 - Hono
 - oRPC
 - OpenAPI
-- WorkOS-style RBAC
+- WorkOS RBAC
 - Expo
 - Tailwind CSS
 - Playwright

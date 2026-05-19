@@ -12,7 +12,7 @@ Razorpay checkout
         +-----------------------------+
         |                             |
         v                             v
-Client return/update           Razorpay webhook event
+Client confirmation path       Razorpay webhook event
                                       |
                                       v
                               Validate signature
@@ -30,7 +30,7 @@ Client return/update           Razorpay webhook event
                               Fulfill credits idempotently
 
 Background safety net:
-2-hour cron -> find stale created purchases -> reconcile with payment/webhook state
+scheduled cron -> find stale created purchases -> reconcile with payment/webhook state
 ```
 
 ## Design Notes

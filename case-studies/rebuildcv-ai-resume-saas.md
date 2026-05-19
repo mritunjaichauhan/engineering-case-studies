@@ -8,6 +8,13 @@ An AI resume and career SaaS product for resume analysis, ATS scoring, job-descr
 
 Full-stack SaaS and monetization engineering across AI workflows, billing, invoices, database schema, user journeys, and admin workflows.
 
+## Public-Safe Evidence Notes
+
+- Timeframe: 2025 production SaaS work.
+- Evidence type: sanitized product scope, architecture notes, schema-level summaries, and monetization workflow notes.
+- My contribution: implementation across AI workflows, billing, invoice sync, persistence, admin operations, and user journeys.
+- Not included: private source code, production prompts, customer data, internal dashboards, or business metrics.
+
 ## Problem
 
 Resume builders often stop at editing and templates. A useful career SaaS needs the complete loop:

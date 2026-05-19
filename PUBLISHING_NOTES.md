@@ -1,20 +1,16 @@
-# Publishing Checklist
+# Publishing Notes
 
-Use this checklist before publishing the repo publicly.
+Public-safe notes for keeping this repository polished after publishing.
 
 ## GitHub Repository
 
-- Create a public repo named `engineering-case-studies`.
-- Push this folder as the initial repository contents.
 - Add repo description: `Sanitized case studies from private production AI SaaS and campus placement systems.`
 - Add topics: `case-studies`, `system-design`, `ai-saas`, `nextjs`, `typescript`, `cloudflare-workers`, `convex`, `realtime-ai`, `payments`, `rbac`.
 - Pin the repo on your GitHub profile.
 
 ## GitHub Profile
 
-- Create a public repo named exactly `mritunjaichauhan`.
-- Add the profile README from `/home/mritunjai/Projects/personal/mritunjaichauhan/README.md`.
-- Enable private contribution visibility from your GitHub contribution graph settings.
+- Enable private contribution visibility from your GitHub contribution graph settings if you want private work to count in the graph.
 - Verify the email used in private commits is added to your GitHub account.
 
 ## LinkedIn Featured Section

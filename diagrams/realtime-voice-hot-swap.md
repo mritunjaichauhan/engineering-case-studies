@@ -4,7 +4,7 @@
 Start realtime interview
         |
         v
-Open Nova Sonic session
+Open Amazon Nova Sonic session
         |
         v
 Stream audio and receive interviewer responses
@@ -13,14 +13,14 @@ Stream audio and receive interviewer responses
 Track turn history and accumulated interview context
         |
         v
-Soft deadline around 7:30
+Soft safety threshold before provider limit
         |
         +-- if silence detected --> hot-swap now
         |
         +-- if no silence -------> keep waiting briefly
         |
         v
-Hard deadline around 7:55
+Hard safety threshold before provider limit
         |
         v
 Force hot-swap before upstream session limit

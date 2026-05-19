@@ -8,7 +8,14 @@ The product uses realtime speech instead of a text-only chat interface and suppo
 
 ## My Role
 
-Realtime AI interview and product engineering across browser voice sessions, AWS Nova Sonic relay integration, session lifecycle handling, reconnect behavior, and interview UX.
+Realtime AI interview and product engineering across browser voice sessions, Amazon Nova Sonic relay integration, session lifecycle handling, reconnect behavior, and interview UX.
+
+## Public-Safe Evidence Notes
+
+- Timeframe: 2025 realtime AI product work.
+- Evidence type: sanitized voice-session lifecycle notes, reconnect strategy, UX constraints, and product architecture.
+- My contribution: implementation across browser voice sessions, relay integration, reconnect behavior, continuation prompts, and interview UX.
+- Not included: private source code, production prompts, user conversations, customer data, or provider credentials.
 
 ## Problem
 
@@ -34,8 +41,8 @@ High-stakes interviews are spoken, timed, and context-dependent. A useful simula
 
 ## Engineering Highlights
 
-- Integrated browser voice sessions with an AWS Nova Sonic relay.
-- Added proactive hot-swap reconnects before Nova Sonic session limits: a soft deadline around 7:30 and a hard fallback around 7:55.
+- Integrated browser voice sessions with an Amazon Nova Sonic relay.
+- Added proactive hot-swap reconnects before provider session limits using soft and hard safety thresholds.
 - Preserved conversation history across reconnects so the AI interviewer does not repeat introductions or restart the scenario.
 - Added continuation prompts with explicit rules such as not re-introducing itself after reconnect.
 - Included token refresh before reconnect because realtime session tokens expire.
@@ -48,13 +55,13 @@ High-stakes interviews are spoken, timed, and context-dependent. A useful simula
 Browser Interview UI
         |
         v
-Nova Sonic client state
+Amazon Nova Sonic client state
         |
         v
 Relay server
         |
         v
-AWS Nova Sonic realtime session
+Amazon Nova Sonic realtime session
 
 Reconnect path:
 timer -> wait for silence if possible -> close old session -> refresh token -> replay history -> continue interview
@@ -70,7 +77,7 @@ timer -> wait for silence if possible -> close old session -> refresh token -> r
 
 - Next.js
 - TypeScript
-- AWS Nova Sonic
+- Amazon Nova Sonic
 - WebSockets
 - Passkeys
 - Google OAuth

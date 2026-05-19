@@ -4,6 +4,17 @@ Sanitized engineering case studies from private production SaaS work. This repos
 
 I use this repo to make private work reviewable: architecture decisions, product constraints, system design, operational concerns, and the engineering problems behind the products.
 
+## How To Read This Repo
+
+Each case study focuses on the product problem, my engineering scope, important tradeoffs, and public-safe architecture notes. The goal is to show how I reason about systems without exposing private implementation details.
+
+## Sanitization Policy
+
+- No proprietary source code, secrets, private URLs, customer data, or internal business metrics.
+- Product and technology names are included only when they are safe to discuss publicly.
+- Exact implementation details are generalized when they could reveal private operational behavior.
+- Claims are written as engineering scope and system design notes, not as ownership of entire companies or products.
+
 ## Focus Areas
 
 - Campus placement and student management systems
@@ -20,7 +31,7 @@ I use this repo to make private work reviewable: architecture decisions, product
 | --- | --- |
 | [Campus Placement Management System](case-studies/campus-placement-management-system.md) | Multi-tenant placement workflows, RBAC, Convex data modeling, audit logs, rate limits, mobile/web/API architecture |
 | [RebuildCV AI Resume SaaS](case-studies/rebuildcv-ai-resume-saas.md) | AI resume optimization, CareerGPT, Razorpay billing, Zoho invoices, D1 schema, Cloudflare AI Gateway |
-| [PrepViva Realtime Voice Interviews](case-studies/prepviva-realtime-voice-interviews.md) | AWS Nova Sonic realtime voice UX, proactive hot-swap reconnects, history replay, paid interview sessions |
+| [PrepViva Realtime Voice Interviews](case-studies/prepviva-realtime-voice-interviews.md) | Amazon Nova Sonic realtime voice UX, proactive hot-swap reconnects, history replay, paid interview sessions |
 | [PrepCV2 Gemini Live Interview Prep](case-studies/prepcv2-gemini-live-interview-prep.md) | Gemini Live interviews, proctoring, payment idempotency, VLSI Verilog/Yosys flow, Convex backend |
 
 ## Architecture Notes

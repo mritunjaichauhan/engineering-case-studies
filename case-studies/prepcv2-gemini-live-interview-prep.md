@@ -8,6 +8,13 @@ An AI interview-prep SaaS with Gemini Live voice interviews, resume-aware prompt
 
 Full-stack AI interview product engineering across realtime interview sessions, assessment flows, billing state, proctoring, reports, and technical practice modules.
 
+## Public-Safe Evidence Notes
+
+- Timeframe: 2025 production interview-prep SaaS work.
+- Evidence type: sanitized realtime interview architecture, billing correctness notes, and assessment-module design notes.
+- My contribution: implementation across realtime sessions, assessment flows, billing state, reports, proctoring signals, and technical practice modules.
+- Not included: private source code, user resumes, interview recordings, customer data, secrets, or internal dashboards.
+
 ## Problem
 
 Interview preparation is fragmented. Voice interviews, coding practice, resumes, payments, reports, and proctoring often exist as separate tools. PrepCV2 combines them into one SaaS workflow.
@@ -37,9 +44,9 @@ The system needs to handle:
 
 ## Engineering Highlights
 
-- Built realtime interview orchestration around Gemini Live and Vertex-style bidirectional sessions.
+- Built realtime interview orchestration around Gemini Live bidirectional sessions.
 - Added proctoring-oriented signals including fullscreen/violation tracking patterns.
-- Implemented Razorpay webhook processing with multi-secret validation and event persistence.
+- Implemented Razorpay webhook processing with rotatable secret validation and event persistence.
 - Used authoritative purchase selection and status-priority logic to avoid duplicate or incorrect credit fulfillment.
 - Added a 2-hour reconciliation cron for stale Razorpay credit purchases.
 - Enabled React Compiler in the production Next.js app.
@@ -50,7 +57,7 @@ The system needs to handle:
 ```text
 Next.js Interview App
         |
-        +--> Gemini Live / Vertex-style realtime voice session
+        +--> Gemini Live realtime voice session
         |
         +--> Coding and VLSI practice modules
         |       |
@@ -79,7 +86,7 @@ Next.js Interview App
 - React
 - TypeScript
 - Gemini Live
-- Vertex AI style realtime sessions
+- Gemini Live bidirectional sessions
 - Convex
 - Razorpay
 - Cloudflare R2
